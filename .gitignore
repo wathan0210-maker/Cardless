@@ -1,0 +1,19 @@
+# Godot 4
+.godot/
+*.uid          # Godot 4.4+ (optionnel mais recommandé)
+
+# Mono / C#
+.mono/
+data_*/
+mono_crash.*.json
+
+# Export / builds
+export/
+*.apk
+*.aab
+*.exe
+*.x86_64
+
+# Éditeur
+.DS_Store
+Thumbs.db
