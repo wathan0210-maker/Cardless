@@ -11,8 +11,26 @@ config_version=5
 [application]
 
 config/name="projet_cardless"
-config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="res://icon.svg"
+config/features=PackedStringArray("4.7", "Forward Plus")
+config/icon="res://assets/icons/icon.svg"
+
+[display]
+
+window/stretch/mode="canvas_items"
+
+[file_customization]
+
+folder_colors={
+"res://assets/": "red",
+"res://scenes/": "orange",
+"res://scripts/": "yellow",
+"res://shaders/": "green",
+"res://themes/": "teal"
+}
+
+[gui]
+
+theme/custom_font="uid://bq5jbrfk44qlw"
 
 [physics]
 
@@ -20,4 +38,5 @@ config/icon="res://icon.svg"
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=3
 rendering_device/driver.windows="d3d12"
