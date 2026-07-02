@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://d3h72f5b45fpm"]
+
+[ext_resource type="Texture2D" uid="uid://byw6hv6vtl8mv" path="res://assets/textures/ui/blank32Pixel.png" id="1_w44h4"]
+[ext_resource type="PackedScene" uid="uid://bbldbfj778pge" path="res://scenes/world/Entities/card.tscn" id="2_hqfqh"]
+
+[node name="Game" type="CanvasLayer" unique_id=1659098122]
+
+[node name="Game" type="Control" parent="." unique_id=1827832147]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BG" type="TextureRect" parent="Game" unique_id=522136187]
+modulate = Color(0.34608525, 0.49320817, 0.37403175, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_w44h4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Game" unique_id=175287988]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MainJoueur2" type="HBoxContainer" parent="Game/VBoxContainer" unique_id=1783183855]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Card3" parent="Game/VBoxContainer/MainJoueur2" unique_id=504791059 instance=ExtResource("2_hqfqh")]
+layout_mode = 2
+
+[node name="Card" parent="Game/VBoxContainer/MainJoueur2" unique_id=581539479 instance=ExtResource("2_hqfqh")]
+layout_mode = 2
+is_flipped = true
+
+[node name="Milieu" type="Control" parent="Game/VBoxContainer" unique_id=152205995]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MainJoueur" type="HBoxContainer" parent="Game/VBoxContainer" unique_id=764371039]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
